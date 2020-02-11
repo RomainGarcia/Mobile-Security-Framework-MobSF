@@ -85,7 +85,7 @@ class Environment:
                 '-s',
                 self.identifier]
         if shell:
-            args += ['shell']
+            args += ['shell', 'su', '-c']
         args += cmd_list
 
         try:
